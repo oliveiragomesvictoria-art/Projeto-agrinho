@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Interativo - Agro e Mudanças Climáticas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <span class="badge">AGRO • CLIMA • PRODUÇÃO</span>
+        <h1>Mapa Interativo: Mudanças Climáticas e Produção Agrícola</h1>
+        <p>
+          Explore como clima, seca, chuva e temperatura influenciam a produção agrícola em diferentes regiões.
+        </p>
+      </header>
+
+      <section class="content">
+        <aside class="panel">
+          <h2>Legenda</h2>
+          <div class="legend">
+            <div><span class="dot alto"></span> Alto impacto climático</div>
+            <div><span class="dot medio"></span> Impacto moderado</div>
+            <div><span class="dot baixo"></span> Menor impacto</div>
+          </div>
+
+          <h2>Indicadores</h2>
+          <div class="stats">
+            <div class="card">
+              <strong id="regionName">Brasil</strong>
+              <span>Região selecionada</span>
+            </div>
+            <div class="card">
+              <strong id="impactLevel">Médio</strong>
+              <span>Nível de impacto</span>
+            </div>
+            <div class="card">
+              <strong id="mainCrop">Soja, milho e café</strong>
+              <span>Culturas afetadas</span>
+            </div>
+          </div>
+
+          <p class="note">
+            Clique nas regiões do mapa para ver informações sobre clima e produção agrícola.
+          </p>
+        </aside>
+
+        <section class="map-section">
+          <div class="map-card">
+            <div class="map-header">
+              <h2>Mapa do Agro</h2>
+              <p>Temas climáticos por região</p>
+            </div>
+
+            <div class="map">
+              <button class="region norte" data-name="Norte" data-impact="Alto" data-crop="Açaí, mandioca e cacau">
+                Norte
+              </button>
+              <button class="region nordeste" data-name="Nordeste" data-impact="Alto" data-crop="Algodão, frutas e milho">
+                Nordeste
+              </button>
+              <button class="region centro-oeste" data-name="Centro-Oeste" data-impact="Médio" data-crop="Soja, milho e carne">
+                Centro-Oeste
+              </button>
+              <button class="region sudeste" data-name="Sudeste" data-impact="Médio" data-crop="Café, cana-de-açúcar e laranja">
+                Sudeste
+              </button>
+              <button class="region sul" data-name="Sul" data-impact="Baixo" data-crop="Trigo, soja e arroz">
+                Sul
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
